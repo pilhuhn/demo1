@@ -29,7 +29,7 @@ public abstract class AbstractBoosterApplicationTest {
         when().get()
                 .then()
                 .statusCode(200)
-                .body("content", is(String.format(getProperties().getMessage(), "World")));
+                .body("content", is(String.format(getProperties().getMessage(), "Welt")));
     }
 
     @Test
