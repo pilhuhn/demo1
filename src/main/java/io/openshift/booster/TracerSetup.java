@@ -1,4 +1,4 @@
-package com.example;
+package io.openshift.booster;
 
 import com.uber.jaeger.samplers.ProbabilisticSampler;
 import io.opentracing.util.GlobalTracer;
