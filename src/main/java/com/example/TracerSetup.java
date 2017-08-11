@@ -1,6 +1,5 @@
 package com.example;
 
-import com.uber.jaeger.Configuration;
 import com.uber.jaeger.samplers.ProbabilisticSampler;
 import io.opentracing.util.GlobalTracer;
 import org.springframework.context.annotation.Bean;
@@ -12,9 +11,9 @@ public class TracerSetup {
 
 	@Bean
 	public Tracer jaegerTracer() {
-		return new Configuration("spring-boot",
-				new Configuration.SamplerConfiguration(
+		return new com.uber.jaeger.Configuration("spring-boot",
+				new com.uber.jaeger.Configuration.SamplerConfiguration(
 						ProbabilisticSampler.TYPE, 1),
-				new Configuration.ReporterConfiguration()).getTracer();
+				new com.uber.jaeger.Configuration.ReporterConfiguration()).getTracer();
 	}
 }
