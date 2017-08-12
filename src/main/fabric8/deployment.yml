@@ -4,8 +4,8 @@ spec:
       containers:
       - env:
         - name: JAEGER_AGENT_HOST
-          value: jaeger-hrupp1.8a09.starter-us-east-2.openshiftapps.com
+          value: jaeger-agent-udp-hrupp1.8a09.starter-us-east-2.openshiftapps.com
         - name: JAEGER_AGENT_PORT
-          value: 80
+          value: 6831
         - name: JAEGER_SERVICE_NAME
           value: XXX-TODO
