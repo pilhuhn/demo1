@@ -13,8 +13,8 @@ spec:
           value: http://jaeger-agent-hrupp1.8a09.starter-us-east-2.openshiftapps.com/api/traces  
         resources:
             limits:
-              cpu: "0"
-              memory: "0"
+              cpu: "40m"
+              memory: "256Mi"
             requests:
-              cpu: "0"
-              memory: "0"
+              cpu: "29m"
+              memory: "180Mi"
