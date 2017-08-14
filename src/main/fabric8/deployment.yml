@@ -9,3 +9,5 @@ spec:
           value: 6831
         - name: JAEGER_SERVICE_NAME
           value: XXX-TODO
+        - name: JAEGER_HTTP_QUERY_URL
+          value: http://jaeger-agent-hrupp1.8a09.starter-us-east-2.openshiftapps.com/  
